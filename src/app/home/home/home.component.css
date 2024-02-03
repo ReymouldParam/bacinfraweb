@@ -1,0 +1,102 @@
+.home-banner-section{
+    background-image: url(../../../assets/images/banner-bg.webp);
+}
+
+.banner-content-container{
+    position: relative;
+    padding: 10% 0;
+}
+.banner-content-container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--theme-color-blue);
+    mix-blend-mode: hard-light;
+    clip-path: polygon(0% 0%, 79% 0, 100% 100%, 75% 100%, 0% 100%);
+    width: 800px;
+    height: 100%;
+
+}
+
+.banner-content-container *{
+    position: relative;
+    z-index: 2;
+}
+
+.title{
+    color: white;
+}
+
+.pipeline-bg-1{
+    background-image: url(../../../assets/images/pipiline-2.webp);
+    padding: 40px 20px;
+    position: relative;
+}
+.pipeline-bg-1::before{
+    content: '';
+    background-color: var(--theme-color-blue);
+    height: 100%;
+    width: 100%;
+    mix-blend-mode: hard-light;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pipeline-bg-1 *{
+    position: relative;
+    z-index: 3;
+}
+
+.project-grid-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 40px;
+}
+
+.project-img-container{
+    width: 100%;
+    box-sizing: border-box;
+    /* height: 18vw; */
+    overflow: hidden;
+    position: relative;
+    border-radius: 16px;
+}
+
+.project-img-overlay{
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 0.7s ease-in-out;
+}
+
+.project-img-container:hover .project-img-overlay{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.service-carousel-card{
+    border-radius: 20px;
+    box-shadow: 0 0 14px rgba(162, 162, 162, 0.4);
+    height: 60vh;
+    overflow: hidden;
+}
+
+.service-carousel-card .carousel-inner{
+    background-color: white;
+    clip-path: polygon(0 0, 72% 0, 100% 55%, 100% 100%, 0 100%, 0 0);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.service-carousel-card .carousel-inner .title{
+    color: var(--theme-color-blue);
+    font-size: 1.3rem;
+    font-weight: 500;
+    width: 75%;
+}

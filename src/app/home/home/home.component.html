@@ -1,0 +1,145 @@
+<section class="vh-100 home-banner-section bg-center-cover">
+    <div class="padding-x h-100 banner-content-container">
+        <div class="h-100">
+            <h1 class="fw-bold fs-1 title h-50"><span class="theme-color-red">BAC</span> Infratech Pvt.Ltd.</h1>
+            <div class="d-flex mb-5">
+                <button class="filled-blue-btn me-4">Our Services</button>
+                <button class="unfilled-btn">Projects</button>
+            </div>
+
+            <div>
+                <p class="text text-light w-25 fs-6">
+                    BAC Infratech Pvt Ltd specializes in installing water supply pipelines across diverse locations, ensuring efficient water distribution and accessibility.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="d-flex justify-content-between">
+        <div class="col-5">
+            <div class="w-100 d-flex align-center position-relative">
+                <img src="../../../assets/images/home-about-us.png" alt="" class="w-100 capcule rounded-pill-left" style="background-color: red;">
+                <img src="../../../assets/images/frame-right.webp" alt="" class="curved-img-bg-right">
+            </div>
+        </div>
+        <div class="col-6" >
+            <div class="">
+                <div class="mb-3">
+                    <h1 class="main-title">Who We Are</h1>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="fs-6 w-75">
+                    <p class="fw-normal">About BAC Infratech Pvt.Ltd.</p>
+                    <p>BAC Infratech Pvt Ltd specializes in installing water supply pipelines across diverse locations, ensuring efficient water distribution and accessibility. </p>
+                </div>
+
+                <div>
+                    <button class="filled-blue-btn-md">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-3">
+    <div class="d-flex justify-content-between padding-x">
+        <div class="">
+            <h1 class="main-title">Our Services</h1>
+            <div class="title-underline"></div>
+        </div>
+        <div>
+            <button class="filled-blue-btn-sm">View All</button>
+        </div>
+    </div>
+
+    <div class="padding-x py-2">
+        <owl-carousel-o [options]="homeBannerOwlOptions">
+            <ng-template carouselSlide *ngFor="let item of carouselServices">
+                <div class="service-carousel-card my-3 mx-5 bg-center-cover d-flex align-items-end" style="background-image: url({{item.imgUrl}});">
+                    <div class="carousel-inner p-4">
+                        <h1 class="title">{{item.title}}</h1>
+                        <p>{{item.breif}}</p>
+                        <p class="clickable-text">Read More</p>
+                    </div>
+                </div>
+            </ng-template>  
+             
+        </owl-carousel-o>
+    </div>
+</section>
+
+<section class="py-3">
+    <div class="d-flex justify-content-between padding-x mb-2">
+        <div class="">
+            <h1 class="main-title">All Projects</h1>
+            <div class="title-underline"></div>
+        </div>
+        <div>
+            <button class="filled-blue-btn-sm">View All</button>
+        </div>
+    </div>
+
+    <div class="bg-center-cover pipeline-bg-1 mb-3">
+        <div class="padding-x">
+            <div>
+                <h1 class="text-light fw-bold fs-1">BAC Infratech</h1>
+            </div>
+            <p class="text-light fs-5 mb-0">Pipeline installation for efficient and sustainable water distribution in agriculture settings.</p>
+        </div>
+    </div>
+
+    <div class="padding-x py-2">
+        <div class="mb-3">
+            <h1 class="main-title-md fs-5">On Going Projects</h1>
+            <div class="title-underline"></div>
+        </div>
+
+        <div class="project-grid-container">
+            <div *ngFor="let project of onGoingProjects"> 
+                <div class="project-img-container center-item mb-2">
+                    <img src="{{project.imgUrl}}" alt="" class="w-100">
+
+                    <div class="project-img-overlay p-3 d-flex flex-column justify-content-end">
+                        <p class="fs-4 text-light" style="font-weight: 500; line-height: 110%;">{{project.title}}</p>
+                        <p class="fs-6 fw-normal text-light">{{project.brief}}</p>
+                        <p class="clickable-text">Read More</p>
+                    </div>
+                    
+                </div>
+                <div>
+                    <p class="fs-6 fw-bold text-dark">{{project.title}} - {{project.location}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="padding-x py-2">
+        <div class="mb-3">
+            <h1 class="main-title-md fs-5">Completed Projects</h1>
+            <div class="title-underline"></div>
+        </div>
+
+        <div class="project-grid-container">
+            <div *ngFor="let project of onGoingProjects"> 
+                <div class="project-img-container center-item mb-2">
+                    <img src="{{project.imgUrl}}" alt="" class="w-100">
+
+                    <div class="project-img-overlay p-3 d-flex flex-column justify-content-end">
+                        <p class="fs-4 text-light" style="font-weight: 500; line-height: 110%;">{{project.title}}</p>
+                        <p class="fs-6 fw-normal text-light">{{project.brief}}</p>
+                        <p class="clickable-text">Read More</p>
+                    </div>
+                    
+                </div>
+                <div>
+                    <p class="fs-6 fw-bold text-dark">{{project.title}} - {{project.location}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+

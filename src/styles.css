@@ -1,1 +1,153 @@
 /* You can add global styles to this file, and also import other style files */
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+/* Google font - Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Owl carousel imports */
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
+*{
+    font-family: 'inter' , sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --theme-color-blue: #0E4F98;
+    --theme-color-red: #BF0005;
+}
+
+.theme-color-blue{
+    color: var(--theme-color-blue);
+}
+.theme-color-red{
+    color: var(--theme-color-red);
+}
+
+html, body { 
+    height: 100%;
+}
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif;   
+}
+
+.padding-x{
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+}
+
+.navbar{
+    height: 60px;
+    padding: 5px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #FEFEFE;
+}
+.nav-item{
+    margin: 0 10px;
+    font-weight: 500;
+}
+.nav-link{
+    color:black;
+}
+
+.center-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-center-cover{
+    background-size: cover;
+    background-position: center;
+}
+
+.filled-blue-btn{
+    background-color: var(--theme-color-blue);
+    border: 2px solid var(--theme-color-blue);
+    color: white;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 16px 16px 16px 0px;
+}
+
+.filled-blue-btn-md{
+    background-color: var(--theme-color-blue);
+    border: 2px solid var(--theme-color-blue);
+    color: white;
+    padding: 7px 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 16px 16px 16px 0px;
+}
+
+.filled-blue-btn-sm{
+    background-color: var(--theme-color-blue);
+    border: 2px solid var(--theme-color-blue);
+    color: white;
+    padding: 4px 8px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+    border-radius: 16px 16px 16px 0px;
+}
+
+.unfilled-btn{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 16px 16px 16px 0px;
+}
+
+.rounded-pill-left{
+    border-radius: 0 50em 50em 0;
+}
+
+.rounded-pill-right{
+    border-radius: 50em 0 0 50em;
+}
+
+.curved-img-bg-right{
+    position: absolute;
+    bottom: 0;
+    right: -50%;
+    z-index: 2;
+    height: 110%;
+}
+
+.main-title{
+    color: var(--theme-color-blue);
+    font-weight: 700 !important;
+    font-size: 2rem !important;
+}
+.main-title-md{
+    color: var(--theme-color-blue);
+    font-weight: 700 !important;
+    font-size: 1.4rem !important;
+    margin-bottom: 8px !important;
+}
+
+.title-underline{
+    margin-left: 10px;
+    width: 100px;
+    height: 1px;
+    background-color: var(--theme-color-blue);
+}
+
+.clickable-text{
+    color: #3a92f7;
+    cursor: pointer;
+}
