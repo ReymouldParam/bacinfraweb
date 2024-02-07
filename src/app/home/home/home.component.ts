@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { Router } from '@angular/router';
 import { Project } from '../../models/project';
 import { Services } from '../../models/services';
 
@@ -10,6 +11,9 @@ import { Services } from '../../models/services';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+
+  constructor(private router: Router) { }
+
   homeServicesOwlOptions:OwlOptions = {
     loop: true,
     mouseDrag: true,
@@ -152,6 +156,11 @@ export class HomeComponent {
       content:"Our core business activity is to execute projects pertaining to core infrastructure development like water resources"
     }
   ]
+
+
+  navigateToSection(sectionId: string) {
+    this.router.navigate([], { fragment: sectionId });
+  }
 
 
 }
