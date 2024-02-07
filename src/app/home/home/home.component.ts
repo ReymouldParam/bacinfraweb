@@ -10,14 +10,15 @@ import { Services } from '../../models/services';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  homeBannerOwlOptions:OwlOptions = {
+  homeServicesOwlOptions:OwlOptions = {
     loop: true,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: true,
     dots: true,
+    dotsEach:true,
     navSpeed: 600,
-    nav:false,
+    nav:true,
     navText: ['&#8249', '&#8250;'],
     responsive: {
       0: {
@@ -33,6 +34,31 @@ export class HomeComponent {
         items: 3
       }
     }
+  }
+
+  owlBannerOptions:OwlOptions = {
+    loop: true,
+    dots: false,
+    autoplay:true,
+    navSpeed:500,
+    margin:0,
+    nav:false,
+    items:1
+  }
+
+  OwlBannerTextOptions:OwlOptions = {
+    loop: true,
+    dots: false,
+    autoplay:true,
+    navSpeed:500,
+    mouseDrag: false,
+    touchDrag: false,
+    pullDrag: false,
+    margin:0,
+    nav:false,
+    items:1,
+    animateOut:'fadeOut',
+    animateIn:'fadeOut'
   }
 
   onGoingProjects:Project[] = [

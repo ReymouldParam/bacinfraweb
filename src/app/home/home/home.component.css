@@ -1,5 +1,5 @@
 .home-banner-section{
-    background-image: url(../../../assets/images/banner-bg.webp);
+    position: relative;
 }
 
 .banner-content-container{
@@ -9,6 +9,7 @@
 .banner-content-container::before{
     content: '';
     position: absolute;
+    z-index: 3;
     top: 0;
     left: 0;
     background-color: var(--theme-color-blue);
@@ -16,12 +17,27 @@
     clip-path: polygon(0% 0%, 79% 0, 100% 100%, 75% 100%, 0% 100%);
     width: 800px;
     height: 100%;
-
 }
 
 .banner-content-container *{
     position: relative;
-    z-index: 2;
+    z-index: 4;
+}
+
+.banner-bg-carousel{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.banner-bg-carousel img{
+    width: auto;
+    height: 100vh;
+}
+
+.banner-text-carousel .owl-item{
+    animation: fadeInUp 1s;
 }
 
 .title{
@@ -99,4 +115,50 @@
     font-size: 1.3rem;
     font-weight: 500;
     width: 75%;
+}
+
+.owl-theme .owl-nav {
+    margin-top: 10px;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+  
+.home-service-carousel ::ng-deep .owl-prev,.home-service-carousel ::ng-deep .owl-next {
+    position:absolute;
+    top: 40%;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(17, 17, 17, 0.845) !important;
+    border-radius: 50%;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-service-carousel ::ng-deep .owl-prev {
+    left: 0;
+}
+
+.home-service-carousel ::ng-deep .owl-next {
+    right: 0;
+}
+
+.fade-in-up{
+    animation: fadeInUp 0.5s ease-in-out !important;
+}
+
+@keyframes fadeInUp {
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }

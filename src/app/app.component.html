@@ -8,10 +8,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav m-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="#" [routerLink]="['/']">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
+          <a class="nav-link" href="#" [routerLink]="['/aboutus']">About Us</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Our Services</a>
@@ -32,5 +32,30 @@
 
 
 <router-outlet />
+
+<div class="page-footer py-3 padding-x bg-center-cover">
+  <div>
+    <h1 class="text-light fw-normal mb-1">Company Support</h1>
+    <p class="text-light fw-normal">Our Support available on all working days</p>
+    <ul class="text-light ps-2" style="list-style-type: none;">
+      <li class="d-flex align-center"><mat-icon class="me-1 fs-5">schedule</mat-icon> Mon to Sat - 9am to 5pm</li>
+      <!-- <li class="d-flex align-center"><mat-icon  class="me-1 fs-5">schedule</mat-icon> Saturday - 9am to 5pm</li> -->
+      <li class="d-flex align-center"><mat-icon class="me-1 fs-5">schedule</mat-icon> Sunday - Closed</li>
+    </ul>
+  </div>
+
+  <div>
+    <h1 class="text-light fw-normal mb-1">Company Support</h1>
+    <p class="text-light fw-normal">Our Support available on all working days</p>
+    <p class="text-light fw-normal">1st Floor, Sri Dufhdh Chassss, Thaksssr Hss Prasad lane Passutta, Hyderabad, Telangana 500082</p>
+  </div>
+
+  <div class="d-flex align-items-end justify-content-end">
+    <div class="rounded-pill-right bg-light w-50 p-2 ps-4" style="font-weight: 600;">
+      <p class="mb-1"><span class="fw-bold">Contact Us :</span> +91-7655644433 / +91-8746453534</p>
+      <p class="mb-0"><span class="fw-bold">Email :</span> BACInfra&#64;gmail.com</p>
+    </div>
+  </div>
+</div>
 
 

@@ -1,7 +1,16 @@
 <section class="vh-100 home-banner-section bg-center-cover">
     <div class="padding-x h-100 banner-content-container">
         <div class="h-100">
-            <h1 class="fw-bold fs-1 title h-50"><span class="theme-color-red">BAC</span> Infratech Pvt.Ltd.</h1>
+            <h1 class="fw-bold fs-1 title"><span class="theme-color-red">BAC</span> Infratech Pvt.Ltd.</h1>
+            <div class="banner-text-carousel h-50">
+                <owl-carousel-o [options]="OwlBannerTextOptions" class="">
+                    <ng-template class="item" carouselSlide><h6 class="text-light fw-normal fs-1 mt-3 item fade-in-up">Constructs Excellence.</h6></ng-template> 
+                    <ng-template class="item" carouselSlide><h6 class="text-light fw-normal fs-1 mt-3 item fade-in-up">Building Foundations.</h6></ng-template> 
+                    <ng-template class="item" carouselSlide><h6 class="text-light fw-normal fs-1 mt-3 item fade-in-up">Installing Pipelines. </h6></ng-template> 
+                    <ng-template class="item" carouselSlide><h6 class="text-light fw-normal fs-1 mt-3 item fade-in-up">Supplying Services.</h6></ng-template> 
+                     
+                </owl-carousel-o>
+            </div>
             <div class="d-flex mb-5">
                 <button class="filled-blue-btn me-4">Our Services</button>
                 <button class="unfilled-btn">Projects</button>
@@ -13,6 +22,21 @@
                 </p>
             </div>
         </div>
+    </div>
+
+    <!-- banner backgrouund carousel -->
+    <div class="banner-bg-carousel">
+        <owl-carousel-o [options]="owlBannerOptions" class="w-100 h-100 d-block">
+            <ng-template carouselSlide>
+                <img src="../../../assets/images/banner-bg-1.webp" alt="">
+            </ng-template>  
+            <ng-template carouselSlide>
+                <img src="../../../assets/images/banner-bg-2.webp" alt="">
+            </ng-template>  
+            <ng-template carouselSlide>
+                <img src="../../../assets/images/banner-bg-3.webp" alt="">
+            </ng-template>  
+          </owl-carousel-o>
     </div>
 </section>
 
@@ -56,7 +80,7 @@
     </div>
 
     <div class="padding-x py-2">
-        <owl-carousel-o [options]="homeBannerOwlOptions">
+        <owl-carousel-o [options]="homeServicesOwlOptions" class="home-service-carousel">
             <ng-template carouselSlide *ngFor="let item of carouselServices">
                 <div class="service-carousel-card my-3 mx-5 bg-center-cover d-flex align-items-end" style="background-image: url({{item.imgUrl}});">
                     <div class="carousel-inner p-4">
@@ -70,6 +94,8 @@
         </owl-carousel-o>
     </div>
 </section>
+
+
 
 <section class="py-3">
     <div class="d-flex justify-content-between padding-x mb-2">
@@ -123,7 +149,7 @@
         </div>
 
         <div class="project-grid-container">
-            <div *ngFor="let project of onGoingProjects"> 
+            <div *ngFor="let project of completedProjects"> 
                 <div class="project-img-container center-item mb-2">
                     <img src="{{project.imgUrl}}" alt="" class="w-100">
 
