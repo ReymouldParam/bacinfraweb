@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
+import { RouterLink } from '@angular/router';
 
 
 
@@ -12,12 +13,14 @@ import { MatIconModule } from '@angular/material/icon';
     CommonModule,
     CarouselModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    RouterLink
   ],
   exports: [
     CarouselModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    RouterLink
   ]
 })
 export class SharedModule { } 

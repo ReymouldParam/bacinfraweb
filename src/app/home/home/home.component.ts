@@ -25,7 +25,8 @@ export class HomeComponent {
         items: 1 
       },
       400: {
-        items: 2
+        items: 2,
+        margin:0
       },
       760: {
         items: 3
@@ -128,19 +129,19 @@ export class HomeComponent {
   carouselServices:Services[]=[
     {
       title:"Underground Pipeline Installations",
-      breif:"Our core business activity is to execute projects pertaining to core infrastructure development like water resources ",
+      breif:"Trust BAC Infratech for expert underground pipeline installation. With precision engineering and meticulous planning, we ensure reliable and durable water distribution.",
       imgUrl:"../../../assets/images/home-about-us.png",
       content:"Our core business activity is to execute projects pertaining to core infrastructure development like water resources"
     },
     {
       title:"Plant Pipeline Installations",
-      breif:"Our core business activity is to execute projects pertaining to core infrastructure development like water resources ",
+      breif:" Our expert team ensures precise engineering and seamless integration, guaranteeing optimal performance. Trust us to deliver efficient solutions tailored to your plant's needs.",
       imgUrl:"../../../assets/images/Completed-projects/1.webp",
       content:"Our core business activity is to execute projects pertaining to core infrastructure development like water resources"
     },
     {
       title:"Irrigation Pipeline Installations",
-      breif:"Our core business activity is to execute projects pertaining to core infrastructure development like water resources ",
+      breif:"Elevate your irrigation system with BAC Infratech's precise pipeline installations. Our expert team guarantees efficient water distribution, maximizing crop yield and conserving resources.",
       imgUrl:"../../../assets/images/Completed-projects/2.webp",
       content:"Our core business activity is to execute projects pertaining to core infrastructure development like water resources"
     },

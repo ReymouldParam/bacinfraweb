@@ -162,3 +162,44 @@
         transform: translateY(0);
     }
 }
+
+
+@media screen and (max-width: 500px) {
+    .home-banner-section{
+        padding-top: 60px;
+    }
+    .banner-content-container::before{
+        clip-path: polygon(0 0, 100% 0, 100% 69%, 0 85%);
+        width: 100%;
+        height: 100%;
+    }
+
+    .service-carousel-card{
+        height: 70vh;
+    }
+
+    .pipeline-bg-1{
+        padding: 30px 0;
+    }
+
+    .project-grid-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .project-img-overlay{
+        transform: translateY(90%);
+        opacity: 1;
+    }
+
+    .project-img-overlay::before{
+        content: '\203A';
+        color: white;
+        font-weight: 900;
+        font-size: 40px;
+        rotate: -90deg;
+        position: absolute;
+        right: 50%;
+        top: 3px;
+        translate: 50%;
+    }
+}

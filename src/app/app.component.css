@@ -41,3 +41,16 @@
     position: relative;
     z-index: 3;
 }
+
+@media screen and (max-width:500px) {
+    .page-footer{
+        grid-template-columns: 100%;
+    }
+
+    .navbar{
+        height: auto;
+    }
+    .navbar-brand .header-logo{
+        height: 50px !important;
+    }
+}
