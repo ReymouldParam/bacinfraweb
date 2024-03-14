@@ -99,8 +99,9 @@ body {
 
 .location-container {
     border: 1px solid #FFFFFF;
-    overflow: auto;
+    overflow: hidden;
     border-radius: 5px;
+    height: 60%;
 }
 
 .location {
@@ -211,6 +212,9 @@ body {
         width: 100%;
         height: 50vh;
         overflow: auto;
+    }
+    .contact-blur-bg-container{
+        padding: 10px;
     }
     
 }

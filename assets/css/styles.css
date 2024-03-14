@@ -161,11 +161,16 @@
     border-radius: 10px;
 }
 
+.home-contact-form .input-field .input{
+    width: 100%;
+    padding: 5px;
+    margin: 2px 0;
+    border-radius: 5px;
+    border: 1px solid rgb(134, 134, 134);
+}
+
 
 @media screen and (max-width: 500px) {
-    .home-banner-section{
-        padding-top: 60px;
-    }
     .banner-content-container::before{
         clip-path: polygon(0 0, 100% 0, 100% 69%, 0 85%);
         width: 100%;

@@ -15,7 +15,7 @@
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-
+    <link rel="stylesheet" href="assets/css/animations.css">
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -55,11 +55,11 @@
   </nav>
   <!-- ////////////////////////////////////////////////////// -->
   
-  <section class="home-banner-section bg-center-cover">
+  <section class="home-banner-section bg-center-cover overflow-hidden">
     <div class="padding-x h-100 banner-content-container">
         <div class="h-100">
-            <h1 class="fw-bold fs-1 title animate__animated animate__fadeInRight"><span class="theme-color-red">BAC</span> Infratech Pvt.Ltd.</h1>
-            <div class="banner-text-carousel h-25 h-lg-50">
+            <h1 class="fw-bold fs-1 title scrollAnimation startLeft"><span class="theme-color-red">BAC</span> Infratech Pvt.Ltd.</h1>
+            <div class="banner-text-carousel h-25 h-lg-50 scrollAnimation startBottom">
                 <div id="homeBannerTextCarousel">
                     <div class="item" ><h6 class="text-light fw-normal fs-1 mt-3 item ">Constructs Excellence.</h6></div> 
                     <div class="item" ><h6 class="text-light fw-normal fs-1 mt-3 item ">Building Foundations.</h6></div> 
@@ -67,13 +67,13 @@
                     <div class="item" ><h6 class="text-light fw-normal fs-1 mt-3 item ">Supplying Services.</h6></div> 
                 </div>
             </div>
-            <div class="d-flex mb-5">
+            <div class="d-flex my-5 scrollAnimation startTop">
                 <a href="#servicesContainer"><button class="filled-blue-btn me-4">Our Services</button></a>
                 <a href="#projectsContainer"><button class="unfilled-btn">Projects</button></a>
             </div>
 
             <div>
-                <p class="text text-light w-100 w-lg-25 w-sm-100 fs-6">
+                <p class="text text-light w-100 w-lg-50 w-sm-100 fs-6 scrollAnimation startRight">
                     BAC Infratech Pvt Ltd specializes in installing water supply pipelines across diverse locations, ensuring efficient water distribution and accessibility.
                 </p>
             </div>
@@ -101,7 +101,7 @@
         <div class="col-11 col-lg-5 d-flex align-items-end">
             <div class="w-100 d-flex align-center position-relative">
                 <div class="w-100 rounded-pill-left overflow-hidden vh-sm-25" style="height: 40vh;">
-                    <div id="aboutusImagesCarousel" class="w-100 h-100 d-block">
+                    <div id="aboutusImagesCarousel" class="w-100 h-100 d-block scrollAnimation startLeft" style="transition-delay: 0.2s;">
                         <div class="item">
                             <img src="../../../assets/images/home-about-us.png" alt="" class=" h-100">
                         </div>  
@@ -114,17 +114,17 @@
                     </div>
                 </div>
                 
-                <img src="../../../assets/images/frame-right.webp" alt="" class="curved-img-bg-right">
+                <img src="../../../assets/images/frame-right.webp" alt="" class="curved-img-bg-right scrollAnimation startLeft">
             </div>
         </div>
         <div class="col-12 col-lg-6 pd-md-3" >
-            <div class="">
+            <div class=" scrollAnimation startRight">
                 <div class="mb-3">
                     <h1 class="main-title">Who We Are</h1>
                     <div class="title-underline"></div>
                 </div>
 
-                <div class="fs-6 w-lg-75 w-sm-100">
+                <div class="fs-6 w-lg-100 padding-e w-sm-100">
                     <!-- <p class="fw-normal">About BAC Infratech Pvt.Ltd.</p> -->
                     <p>At BAC Infratech, we pride ourselves on our ability to deliver comprehensive water supply solutions tailored to the unique needs of each project. 
                         Whether it's a small-scale residential development or a large-scale municipal infrastructure project, we approach every endeavor with the same level of dedication and attention to detail. 
@@ -141,7 +141,7 @@
     </div>
 </section>
 
-<section class="py-3" id="servicesContainer">
+<section class="py-3 overflow-hidden" id="servicesContainer">
     <div class="d-flex justify-content-between padding-x">
         <div class="">
             <h1 class="main-title">Our Services</h1>
@@ -152,7 +152,7 @@
         </div> -->
     </div>
 
-    <div class="padding-x py-2">
+    <div class="padding-x py-2 scrollAnimation startBottom">
         <div id="homeServicesCarousel" class="home-service-carousel">
             <div class= "item">
                 <div class="service-carousel-card my-3 mx-3 bg-center-cover d-flex align-items-end" style="background-image: url('assets/images/home-about-us.png');">
@@ -200,7 +200,7 @@
 
 
 
-<section class="py-3" id="projectsContainer">
+<section class="py-3 overflow-hidden" id="projectsContainer">
     <div class="d-flex justify-content-between padding-x mb-2">
         <div class="">
             <h1 class="main-title">All Projects</h1>
@@ -212,7 +212,7 @@
     </div>
 
     <div class="bg-center-cover pipeline-bg-1 mb-3">
-        <div class="padding-x">
+        <div class="padding-x scrollAnimationFixed startLeft">
             <div>
                 <h1 class="text-light fw-bold fs-1">BAC Infratech</h1>
             </div>
@@ -224,7 +224,7 @@
         
 
         <div class="project-grid-container">
-            <div> 
+            <div class="scrollAnimation startLeft"> 
                 <div class="project-img-container center-item mb-2">
                     <img src="assets/images/On-going-projects/1.webp" alt="" class="w-100">
 
@@ -240,7 +240,7 @@
                 </div>
             </div>
 
-            <div> 
+            <div class="scrollAnimation startLeft"> 
                 <div class="project-img-container center-item mb-2">
                     <img src="assets/images/On-going-projects/2.webp" alt="" class="w-100">
 
@@ -256,7 +256,7 @@
                 </div>
             </div>
 
-            <div> 
+            <div class="scrollAnimation startRight"> 
                 <div class="project-img-container center-item mb-2">
                     <img src="assets/images/On-going-projects/3.webp" alt="" class="w-100">
 
@@ -272,7 +272,7 @@
                 </div>
             </div>
 
-            <div> 
+            <div class="scrollAnimation startRight"> 
                 <div class="project-img-container center-item mb-2">
                     <img src="assets/images/On-going-projects/4.webp" alt="" class="w-100">
 
@@ -295,7 +295,7 @@
 
 </section>
 
-<section  class="py-3">
+<section  class="py-3 overflow-hidden">
     <div class="d-flex justify-content-between align-items-center padding-x mb-2">
         <div class="">
             <h1 class="main-title">Gallery</h1>
@@ -354,12 +354,51 @@
         </div>
     </div>
 </section>
+
+
+<!-- Contact Form container -->
+<section class="padding-x py-4 overflow-hidden bg-center-cover" style="background-image: url(assets/images/gallery/2.webp);">
+    <div class="contact-container d-flex rounded-4 overflow-hidden flex-column flex-lg-row">
+        <div class="col-12 col-md-6 padding-x py-3 bg-light  scrollAnimation startLeft">
+            <div><h1 class="title fs-1 fw-bold text-dark">Get In <span class="">Touch</span></h1></div>
+            <form action="" class="home-contact-form">
+                <div class="input-field">
+                    <input class="input" type="text" placeholder="Full Name (Required)" required>
+                </div>
+
+                <!-- <div class="input-field">
+                    <input class="input" type="text" placeholder="Enter Your Email ID">
+                </div> -->
+
+                <div class="input-field">
+                    <input class="input" type="text" placeholder="Enter Your Mobile Number (Required)" required>
+                </div>
+
+                <div class="input-field">
+                    <textarea class="input" type="text" placeholder="Message..." rows="3"></textarea>
+                </div>
+
+                <div class="button-container w-100">
+                    <button class="filled-blue-btn-md rounded w-100 py-2" type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-12 col-md-6">
+            <div class="w-100 h-100 bg-dark map-container scrollAnimation startRight">
+                <iframe class="w-100 h-100"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15219.826133235945!2d78.48654914999999!3d17.50958825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9aa8bccacd67%3A0x5f72f78ed8ef8142!2sDecathlon%20Kompally%20(Suchitra)!5e0!3m2!1sen!2sin!4v1709122184366!5m2!1sen!2sin"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact Form container end -->
+
   
     <!-- ////////////////////////////////////////////////////// -->
   <div class="page-footer bg-center-cover" id="contactUsContainer">
   
-    <div class="d-flex justify-content-between w-100">
-        <div class="d-flex justify-content-between align-items-center padding-s py-2 w-75">
+    <div class="d-flex justify-content-between w-100 flex-column flex-lg-row">
+        <div class="d-flex justify-content-between align-items-center padding-s py-2 w-lg-75 w-sm-100">
             <div class="d-flex justify-content-between align-items-center">
                 <h1 class="text-light mb-0 fs-3 d-inline fw-bolder w-25">Visit Us</h1>
               <p class="text-light fw-normal mb-0">1st Floor, Sri Dufhdh Chassss, Thaksssr Hss Prasad lane Passutta, Hyderabad, Telangana 500082</p>
@@ -368,8 +407,8 @@
         
           <div class="d-flex align-items-end justify-content-end container-bg-blue">
             <div class=" w-100 p-2 ps-4" style="font-weight: 600;">
-              <p class="mb-1 theme-color-blue"><span class="fw-bolder">Contact Us :</span> +91-7655644433 / +91-8746453534</p>
-              <p class="mb-0 theme-color-blue"><span class="fw-bolder">Email :</span> BACInfra&#64;gmail.com</p>
+              <p class="mb-1 theme-color-blue"><span class="fw-bolder">Contact Us </span> +91-7655644433 / +91-8746453534</p>
+              <p class="mb-0 theme-color-blue"><span class="fw-bolder">Email </span> BACInfra&#64;gmail.com</p>
             </div>
           </div>
     </div>
@@ -390,6 +429,9 @@
 
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
+
+
+  <script src="assets/js/animations.js"></script>
 
   <!-- Home backgroud caousel -->
   <script>

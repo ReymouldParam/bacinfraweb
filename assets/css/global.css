@@ -261,6 +261,9 @@ body {
 }
 
 @media screen and (max-width:500px) {
+    :root{
+        --std-padding: 20px;
+    }
     .w-sm-0{
         width: 0% !important;
     }
@@ -318,9 +321,17 @@ body {
     }
 
     .padding-x{
-        padding-left: 20px !important;
-        padding-right: 20px !important;
+        padding-left: var(--std-padding) !important;
+        padding-right: var(--std-padding) !important;
     }
     
+    .page-footer .container-bg-blue{
+        width: 100%;
+        clip-path: none;
+    }
+
+    .di-sm-none{
+        display: none;
+    }
     
 }
