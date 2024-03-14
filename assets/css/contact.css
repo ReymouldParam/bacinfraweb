@@ -1,0 +1,217 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    margin: 0px;
+}
+
+.contact-bg-heading-container {
+    background-color: #0A53A0;
+    width: 100%;
+}
+
+.small-line-container {
+    width: 50px;
+    height: 1.5px;
+    background-color: #FEFEFE;
+}
+
+.contact-heading {
+    color: #FEFEFE;
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 0em;
+}
+
+.contact-body-bottom-container {
+    background-image: url(../images/contact/contact-bg-img.webp);
+    width: 100%;
+    height: auto;
+}
+
+.contact-blur-bg-container {
+    background-color: #ffffff47;
+    backdrop-filter: blur(7px);
+    width: 100%;
+    position: relative;
+    border: 1px solid lightgrey;
+    display: flex;
+    justify-content: space-between;
+    /*align-items: center;*/
+    padding: 28px;
+    filter: blur(-5px);
+    border-radius: 7px;
+}
+
+.contact-blur-bg-container::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 15%; /* Adjust the width to control the size of the highlight */
+    height: 30%; /* Adjust the height to control the size of the highlight */
+    border-left: 2px solid #FFFFFF; /* Adjust the color and thickness of the border */
+    border-top: 2px solid #FFFFFF;
+    border-top-left-radius: 10px; /* top-left corner rounded */
+    opacity: 0.8;
+}
+
+.contact-blur-bg-container::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    width: 15%; /* Adjust the width to control the size of the highlight */
+    height: 30%; /* Adjust the height to control the size of the highlight */
+    border-right: 2px solid #FFFFFF; /* Adjust the color and thickness of the border */
+    border-bottom: 2px solid #FFFFFF; /* Adjust the color and thickness of the border */
+    border-bottom-right-radius: 10px; /* top-left corner rounded */
+    opacity: 0.8;
+}
+
+.list-item-border-container {
+    border-bottom: 0.5px solid #FFFFFF
+}
+
+.description-container {
+    width: 48%;
+}
+
+.form-container {
+    width: 48%;
+}
+
+.description-container-heading {
+    font-family: Inter;
+    font-size: 33px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.description-container-paragraph {
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.location-container {
+    border: 1px solid #FFFFFF;
+    overflow: auto;
+    border-radius: 5px;
+}
+
+.location {
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 400;
+    color: #FFFFFF;
+    padding: 10px;
+    margin-bottom: 0px;
+    width: 95%;
+}
+
+.form-heading {
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.form-description {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.label-element {
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.bg-no-input {
+    background-color: transparent;
+    padding: 6px;
+    outline: none;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+}
+
+.bg-no-input::placeholder {
+    color: #FFFFFF;
+    font-size: 13px;
+}
+
+.send-btn {
+    background-color: #0E4F98;
+    width: 100%;
+    border-width: 0px;
+    color: #FFFFFF;
+    margin-top: 8px;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 500px) {
+    .contact-blur-bg-container {
+        flex-direction: column;
+        padding-top: 4px;
+    }
+
+    .description-container {
+        width: 100%;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    .contact-blur-bg-container::before {
+        width: 40%; /* Adjust the width to control the size of the highlight */
+        height: 15%; /* Adjust the height to control the size of the highlight */
+    }
+    
+    .contact-blur-bg-container::after {
+        width: 40%; /* Adjust the width to control the size of the highlight */
+        height: 15%; /* Adjust the height to control the size of the highlight */
+    }
+    .description-container-heading {
+        font-size: 26px;
+    }
+    .description-container-paragraph {
+        font-size: 17px;
+    }
+
+    .location {
+        font-size: 19px;
+        width: 100%;
+    }
+    .form-description {
+        font-size: 23px;
+    }
+    .label-element {
+        font-size: 18px;
+    }
+
+    .bg-no-input {
+        padding: 8px;
+    }
+    .bg-no-input::placeholder {
+        font-size: 15px;
+    }
+    .contact-heading {
+        font-size: 22px;
+    }
+    .location-container {
+        width: 100%;
+        height: 50vh;
+        overflow: auto;
+    }
+    
+}
+

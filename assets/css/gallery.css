@@ -1,0 +1,41 @@
+
+.gallery-line {
+    width: 4%;
+}
+
+.gallery-image-container {
+    width: 100%;
+    height: 100vh;
+}
+
+.gallery-image-container-inner {
+    width: 33%;
+    height: 100vh;
+}
+
+.gallery-image-inner-one {
+    width: 100%;
+    height: 25vh;
+}
+
+.gallery-image-inner-two {
+    width: 100%;
+    height: 75vh;
+}
+
+.image-container {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/gallery/gallery-img-2.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.image-container-two {
+    background-image: url(../images/gallery/gallery-img-1.webp);
+}
+
+.image-container-three {
+    background-image: url(../images/gallery/gallery-img-3.webp);
+}

@@ -1,0 +1,203 @@
+.home-banner-section{
+    position: relative;
+    height: calc(100vh - var(--header-height));
+}
+
+.banner-content-container{
+    position: relative;
+    padding: 10% 0;
+}
+.banner-content-container::before{
+    content: '';
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: var(--theme-color-blue);
+    mix-blend-mode: hard-light;
+    clip-path: polygon(0% 0%, 79% 0, 100% 100%, 75% 100%, 0% 100%);
+    width: 800px;
+    height: 100%;
+}
+
+.banner-content-container *{
+    position: relative;
+    z-index: 4;
+}
+
+.banner-bg-carousel{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.banner-bg-carousel img{
+    width: 100%;
+    height: calc(100vh - var(--header-height));
+}
+
+#homeBannerTextCarousel .item{
+    transform: translateY(100%);
+    transition: all 0.5s ease-out;
+}
+
+#homeBannerTextCarousel .slick-current .item{
+    transform: translateY(0);
+}
+
+.title{
+    color: white;
+}
+
+.pipeline-bg-1{
+    background-image: url(../images/pipiline-2.webp);
+    padding: 40px 20px;
+    position: relative;
+}
+.pipeline-bg-1::before{
+    content: '';
+    background-color: var(--theme-color-blue);
+    height: 100%;
+    width: 100%;
+    mix-blend-mode: hard-light;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pipeline-bg-1 *{
+    position: relative;
+    z-index: 3;
+}
+
+.project-grid-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 40px;
+}
+
+.project-img-container{
+    width: 100%;
+    box-sizing: border-box;
+    /* height: 18vw; */
+    overflow: hidden;
+    position: relative;
+    border-radius: 16px;
+}
+
+.project-img-overlay{
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 0.7s ease-in-out;
+}
+
+.project-img-container:hover .project-img-overlay{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.service-carousel-card{
+    border-radius: 20px;
+    box-shadow: 0 0 14px rgba(162, 162, 162, 0.4);
+    height: 60vh;
+    overflow: hidden;
+}
+
+.service-carousel-card .carousel-inner{
+    background-color: white;
+    clip-path: polygon(0 0, 72% 0, 100% 55%, 100% 100%, 0 100%, 0 0);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.service-carousel-card .carousel-inner .title{
+    color: var(--theme-color-blue);
+    font-size: 1.3rem;
+    font-weight: 500;
+    width: 75%;
+}
+
+  
+.home-service-carousel ::ng-deep .owl-prev,.home-service-carousel ::ng-deep .owl-next {
+    position:absolute;
+    top: 40%;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(17, 17, 17, 0.845) !important;
+    border-radius: 50%;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-service-carousel ::ng-deep .owl-prev {
+    left: 0;
+}
+
+.home-service-carousel ::ng-deep .owl-next {
+    right: 0;
+}
+
+#aboutusImagesCarousel .item img{
+    width: 100%;
+    height: 100%;
+}
+
+#homeGalleryCarousel .grid-container{
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    column-gap: 2%;
+    height: 50vh;
+}
+
+#homeGalleryCarousel .item .img{
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width: 500px) {
+    .home-banner-section{
+        padding-top: 60px;
+    }
+    .banner-content-container::before{
+        clip-path: polygon(0 0, 100% 0, 100% 69%, 0 85%);
+        width: 100%;
+        height: 100%;
+    }
+
+    .service-carousel-card{
+        height: 70vh;
+    }
+
+    .pipeline-bg-1{
+        padding: 30px 0;
+    }
+
+    .project-grid-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .project-img-overlay{
+        transform: translateY(90%);
+        opacity: 1;
+    }
+
+    .project-img-overlay::before{
+        content: '\203A';
+        color: white;
+        font-weight: 900;
+        font-size: 40px;
+        rotate: -90deg;
+        position: absolute;
+        right: 50%;
+        top: 3px;
+        translate: 50%;
+    }
+}
