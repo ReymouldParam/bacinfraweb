@@ -9,27 +9,30 @@
 }
 
 .gallery-image-container-inner {
-    width: 33%;
+    width: 33.33%;
     height: 100vh;
 }
 
 .gallery-image-inner-one {
     width: 100%;
     height: 25vh;
+    padding: 5px;
 }
 
 .gallery-image-inner-two {
     width: 100%;
     height: 75vh;
+    padding: 5px;
 }
 
 .image-container {
-    width: 100%;
     height: 100%;
-    background-image: url(../images/gallery/gallery-img-2.webp);
+    background-image: url(../images/gallery/gallery-image-7.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 .image-container-two {
@@ -39,3 +42,95 @@
 .image-container-three {
     background-image: url(../images/gallery/gallery-img-3.webp);
 }
+
+.image-container-four {
+    background-image: url(../images/gallery/gallery-img-4.webp);
+}
+
+.image-container-five {
+    background-image: url(../images/gallery/gallery-img-5.webp);
+}
+
+.image-container-six {
+    background-image: url(../images/gallery/);
+}
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    .gallery-image-container {
+        display: block;
+    }
+
+    .your-class {
+        display: none !important;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    /*.gallery-image-container {
+        display: none !important;
+    }*/
+    .your-class {
+        margin: 30px 0;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        
+        /* background-color: blueviolet; */
+    }
+    
+    .slick-list {
+        width: 100% !important;
+    }
+    
+    .arrow {
+        background-color: rgb(42, 42, 42);
+        color: white;
+        font-size: 10px;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        padding: 7px;
+    } 
+    
+    .carousel-item {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .carousel-img {
+        width: 100%;
+        height: 30vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .gallery-image-container-inner {
+        width: 100%;
+        display: flex;
+    }
+
+    .gallery-image-inner-one {
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+    }
+    
+    .gallery-image-inner-two {
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+    }
+    
+}
+
+
