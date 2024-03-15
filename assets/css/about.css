@@ -1,0 +1,9 @@
+.about-curve-img{
+    height: 35vh;
+}
+
+@media screen and (max-width:500px) {
+    .about-curve-img{
+        height: 30vh;
+    }
+}

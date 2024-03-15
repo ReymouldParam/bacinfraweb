@@ -30,8 +30,8 @@ html, body {
 body { 
     padding-top: var(--header-height);
     margin: 0;   
-    /* background-image: url(assets/images/bg-circle.png);
-    background-size: 20px auto; */
+    background-image: url(../images/bg-circle.png);
+    background-size: 50px auto;
 }
 
 /* .header-height{
@@ -210,6 +210,10 @@ body {
     color:black;
 }
 
+.nav-link.nav-active{
+    color: var(--theme-color-blue);
+}
+
 /* Footer Styles */
 .page-footer{
     position: relative;
@@ -331,7 +335,7 @@ body {
     }
 
     .di-sm-none{
-        display: none;
+        display: none !important;
     }
     
 }

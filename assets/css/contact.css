@@ -56,6 +56,7 @@ body {
     border-top: 2px solid #FFFFFF;
     border-top-left-radius: 10px; /* top-left corner rounded */
     opacity: 0.8;
+    z-index: -1;
 }
 
 .contact-blur-bg-container::after {
@@ -141,6 +142,7 @@ body {
     outline: none;
     border: 1px solid #FFFFFF;
     border-radius: 5px;
+    color: #fff;
 }
 
 .bg-no-input::placeholder {
@@ -215,6 +217,10 @@ body {
     }
     .contact-blur-bg-container{
         padding: 10px;
+    }
+
+    .form-heading{
+        font-size: 30px;
     }
     
 }

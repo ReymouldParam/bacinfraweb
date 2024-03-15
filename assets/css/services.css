@@ -46,7 +46,7 @@ a {
 }
 
 .grid-item-container {
-    background-image: url(../images/service/bac-service-img.webp);
+    background-image: url(../images/gallery/Tretment\ plant.webp);
     width: 100%;
     height: 420px;
     background-size: cover;
@@ -61,23 +61,23 @@ a {
 }
 
 .grid-item-container-two {
-    background-image: url(../images/service/service-img-1.webp);
+    background-image: url(../images/gallery/2.webp);
 }
 
 .grid-item-container-three {
-    background-image: url(../images/service/service-img-3.webp);
+    background-image: url(../images/gallery/Irrigation.webp);
 }
 
 .grid-item-container-four {
-    background-image: url(../images/service/bac-service-img-4.webp);
+    background-image: url(../images/gallery/Roads.webp);
 }
 
 .grid-item-container-five {
-    background-image: url(../images/service/service-img-5.webp);
+    background-image: url(../images/gallery/Buildings.webp);
 }
 
 .grid-item-container-six {
-    background-image: url(../images/service/service-img-6.webp);
+    background-image: url(../images/gallery/gallery-img-2.webp);
 }
 
 .grid-item-inner-container {
@@ -158,11 +158,12 @@ a {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: auto;
+    height: 50vh;
 }
 
 .service-inner-details-container {
     width: 48%;
+    height: 100%;
     overflow: auto;
 }
 
@@ -227,15 +228,22 @@ a {
 
     .service-details-container {
         flex-direction: column;
+        height: 80vh;
     } 
 
     .service-img-container {
         width: 100%;
-        height: 360px;
+        height: 200px;
     }
     .service-inner-details-container {
         width: 100%;
         margin-top: 15px;
+    }
+    .service-hidden-heading{
+        font-size: 22px;
+    }
+    .service-hidden-description{
+        font-size: 15px;
     }
     
 }
