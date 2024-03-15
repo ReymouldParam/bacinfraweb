@@ -65,7 +65,7 @@ a {
 }
 
 .grid-item-container-three {
-    background-image: url(../images/gallery/Irrigation.webp);
+    background-image: url(../images/irrigation.webp);
 }
 
 .grid-item-container-four {
@@ -73,11 +73,11 @@ a {
 }
 
 .grid-item-container-five {
-    background-image: url(../images/gallery/Buildings.webp);
+    background-image: url(../images/gallery/gallery-img-2.webp);
 }
 
 .grid-item-container-six {
-    background-image: url(../images/gallery/gallery-img-2.webp);
+    background-image: url(../images/automation.webp);
 }
 
 .grid-item-inner-container {

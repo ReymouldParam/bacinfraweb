@@ -94,6 +94,10 @@ body {
     border-radius: 16px 16px 16px 0px;
 }
 
+.text-justify{
+    text-align: justify;
+}
+
 .unfilled-btn{
     background-color: transparent;
     border: 2px solid white;
