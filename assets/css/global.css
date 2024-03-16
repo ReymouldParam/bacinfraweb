@@ -30,7 +30,7 @@ html, body {
 body { 
     padding-top: var(--header-height);
     margin: 0;   
-    background-image: url(../images/bg-circle.png);
+    background-image: url(../images/bg-circle.webp);
     background-size: 50px auto;
 }
 

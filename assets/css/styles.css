@@ -16,7 +16,7 @@
     background-color: var(--theme-color-blue);
     mix-blend-mode: hard-light;
     clip-path: polygon(0% 0%, 79% 0, 100% 100%, 75% 100%, 0% 100%);
-    width: 800px;
+    width: 75%;
     height: 100%;
 }
 
