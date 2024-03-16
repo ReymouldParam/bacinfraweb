@@ -193,6 +193,10 @@
     border: 1px solid var(--theme-color-blue);
 }
 
+.about-carousel-container{
+    width: 40%;
+}
+
 
 @media screen and (max-width: 500px) {
     .banner-content-container::before{
@@ -239,5 +243,9 @@
         grid-template-columns: 100%;
         height: 120vh;
         row-gap: 2%;
+    }
+
+    .about-carousel-container{
+        width: 100%;
     }
 }
